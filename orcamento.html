@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Orçamento.">
   <title>Orçamento | Bikcraft</title>
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body id="orcamento">
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="./img/bikcraft.svg" alt=""></a>
+      <a href="./"><img src="./img/bikcraft.svg"  width="136" height="32" alt="Bikcraft"></a>
       <nav aria-label="primaria">
         <ul class="header-menu cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -34,92 +35,134 @@
       </div>
     </div>
 
-  <form class="orcamento container" action="./">
-    <div class="orcamento-produto">
-      <h2 class="font-2-xs cor-5 ">Bikcraft ou Seguro?</h2>
-      
-      <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
-      <label for="bikcraft">Bikcraft</label>
+    <form class="orcamento container" action="./">
+      <div class="orcamento-produto">
+        <h2 class="font-2-xs cor-5 ">Bikcraft ou Seguro?</h2>
 
-      <input type="radio" name="tipo" value="seguro" id="seguro">
-      <label for="seguro">Seguro</label>
+        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+        <label for="bikcraft">Bikcraft</label>
 
-      <div class="orcamento-conteudo" id="orcamento-bikcraft">
-        <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+        <input type="radio" name="tipo" value="seguro" id="seguro">
+        <label for="seguro">Seguro</label>
 
-        <input type="radio" name="produto" value="nimbus" id="nimbus">
-        <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
-  
-        <input type="radio" name="produto" value="magic" id="magic">
-        <label for="magic">Magic Might<span>R$ 2499</span></label>
+        <div class="orcamento-conteudo" id="orcamento-bikcraft">
+          <h2 class="font-1-xs cor-5">Escolha a sua</h2>
 
-        <input type="radio" name="produto" value="ouro" id="nebula">
-        <label for="nebula">Nebula Cosmic<span>R$ 3999</span></label>
+          <input type="radio" name="produto" value="nimbus" id="nimbus">
+          <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="24" height="24" alt=""> Motor Eletrico</li>
+              <li><img src="./img/icones/carbono.svg" width="24" height="24" alt=""> Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="24" height="24" alt=""> 50 Km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="24" height="24" alt=""> Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+
+          <input type="radio" name="produto" value="magic" id="magic">
+          <label for="magic">Magic Might<span>R$ 2499</span></label>
+
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="24" height="24" alt=""> Motor Eletrico</li>
+              <li><img src="./img/icones/carbono.svg" width="24" height="24" alt=""> Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="24" height="24" alt=""> 45 Km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="24" height="24" alt=""> Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/magic.jpg"  width="1120" height="680" alt="Bicicleta branca">
+          </div>
+
+          <input type="radio" name="produto" value="nebula" id="nebula">
+          <label for="nebula">Nebula Cosmic<span>R$ 3999</span></label>
+
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" width="24" height="24" alt=""> Motor Eletrico</li>
+              <li><img src="./img/icones/carbono.svg" width="24" height="24" alt=""> Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="24" height="24" alt=""> 40 Km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="24" height="24" alt=""> Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/nebula.jpg" width="1120" height="680" alt="Bicicleta preta">
+          </div>
+
+        </div>
+
+        <div class="orcamento-conteudo" id="orcamento-seguro">
+          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+        </div>
+
+        <input type="radio" name="produto" value="prata" id="prata">
+        <label for="prata">Prata <span>R$ 199</span></label>
+
+        <div class="orcamento-detalhes">
+          <ul class="font-1-xs cor-8">
+            <li><img src="./img/icones/horario.svg" width="24" height="24" alt=""> Suporte 08h às 18h</li>
+            <li><img src="./img/icones/local.svg" width="24" height="24" alt=""> Cobertura Estadual</li>
+          </ul>
+        </div>
+
+        <input type="radio" name="produto" value="ouro" id="ouro">
+        <label for="ouro">Ouro <span>R$ 299</span></label>
+
+        <div class="orcamento-detalhes">
+          <ul class="font-1-xs cor-8">
+            <li><img src="./img/icones/horario.svg" width="24" height="24" alt=""> Suporte 24h</li>
+            <li><img src="./img/icones/local.svg"  width="24" height="24" alt=""> Cobertura Nacional</li>
+          </ul>
+        </div>
 
       </div>
-
-      <div class="orcamento-conteudo" id="orcamento-seguro">
-        <h2 class="font-1-xs cor-5">Escolha o plano</h2>
+      <div class="orcamento-dados form">
+        <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro">
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro">
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado">
+        </div>
+        <button class="botao col-2">Solicitar Orçamento</button>
       </div>
-
-      <input type="radio" name="produto" value="prata" id="prata">
-      <label for="prata">Prata <span>R$ 199</span></label>
-
-      <input type="radio" name="produto" value="ouro" id="ouro">
-      <label for="ouro">Ouro <span>R$ 299</span></label>
-
-
-    </div>
-    <div class="orcamento-dados form">
-      <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
-      <div>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome">
-      </div>
-      <div>
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" id="sobrenome" name="sobrenome">
-      </div>
-      <div class="col-2">
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
-      </div>
-      <div class="col-2">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-      </div>
-      <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
-      <div>
-        <label for="cep">CEP</label>
-        <input type="text" id="cep" name="cep">
-      </div>
-      <div>
-        <label for="numero">Número</label>
-        <input type="text" id="numero" name="numero">
-      </div>
-      <div>
-        <label for="logradouro">Logradouro</label>
-        <input type="text" id="logradouro" name="logradouro">
-      </div>
-      <div>
-        <label for="bairro">Bairro</label>
-        <input type="text" id="bairro" name="bairro">
-      </div>
-      <div>
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" name="cidade">
-      </div>
-      <div>
-        <label for="estado">Estado</label>
-        <input type="text" id="estado" name="estado">
-      </div>
-      <button class="botao col-2">Solicitar Orçamento</button>
-    </div>
-  </form>
+    </form>
   </main>
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="Bikcraft">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -129,9 +172,9 @@
           <li>Barueri, SP</li>
         </ul>
         <div class="footer-redes">
-          <a href="./"><img src="./img/redes/instagram.svg" alt="Intagram"></a>
-          <a href="./"><img src="./img/redes/facebook.svg" alt="Facebook"></a>
-          <a href="./"><img src="./img/redes/youtube.svg" alt="Youtube"></a>
+          <a href="./"><img src="./img/redes/instagram.svg" width="24" height="24" alt="Intagram"></a>
+          <a href="./"><img src="./img/redes/facebook.svg" width="24" height="24" alt="Facebook"></a>
+          <a href="./"><img src="./img/redes/youtube.svg" width="24" height="24" alt="Youtube"></a>
 
         </div>
       </div>
